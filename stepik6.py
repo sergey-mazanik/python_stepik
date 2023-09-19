@@ -167,17 +167,56 @@
 # }
 # print(f'{sweet["name"]}\n{sweet["calories"]}\n{sweet["id"]}')
 
-days = {
-    1: 31,
-    2: 28,
-    3: 31,
-    4: 30,
-    5: 31,
-    6: 30,
-    7: 31,
-    8: 31,
-    9: 30,
-    10: 31,
-    11: 30,
-    12: 31
-}
+# days = {
+#     1: 31,
+#     2: 28,
+#     3: 31,
+#     4: 30,
+#     5: 31,
+#     6: 30,
+#     7: 31,
+#     8: 31,
+#     9: 30,
+#     10: 31,
+#     11: 30,
+#     12: 31
+# }
+# print(f'{days[int(input())]}')
+
+# from pprint import pprint # для красивого вывода словаря
+#
+# sweet = {
+#     "id": "0001",
+#     "type": "donut",
+#     "name": "Cake",
+#     "ppu": 0.55,
+#     "calories": 125,
+# }
+# sweet["weight"] = 230
+# sweet["have_topping"] = True
+# sweet["name"] = "SuperCake"
+# sweet["calories"] = 350
+# pprint(sweet)
+
+# sweet = {
+#     "id": "0001",
+#     "type": "donut",
+#     "name": "Cake",
+#     "ppu": 0.55,
+#     "calories": 125,
+# }
+# del sweet["ppu"]
+# del sweet["type"]
+# print(sweet)
+
+# my_dict = {}
+# for i in range(1, (int(input()) + 1)):
+#     my_dict[i] = i ** 2
+# print(my_dict)
+
+# from string import ascii_lowercase
+#
+# alphabet = {}
+# for i in range(len(ascii_lowercase)):
+#     alphabet[chr(97 + i)] = i + 1
+# print(alphabet)
