@@ -402,8 +402,8 @@
 # second option
 # user['secret'], user['surname'] = user.pop('password'), user.pop('last_name')
 
-lst = list(map(int, input().split()))
-my_dict = {lst[-2]: lst[-1]}
-for i in range(-3, -len(lst)-1, -1):
-    my_dict = {lst[i]: my_dict}
-print(my_dict)
+# lst = list(map(int, input().split()))
+# my_dict = {lst[-2]: lst[-1]}
+# for i in range(-3, -len(lst)-1, -1):
+#     my_dict = {lst[i]: my_dict}
+# print(my_dict)
