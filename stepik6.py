@@ -344,3 +344,66 @@
 #       'Malaysia': 'Kuala Lumpur'}
 # capitals = d1 | d2
 # print(capitals)
+
+# d1 = {'a': 100, 'b': 200, 'c': 333}
+# d2 = {'x': 300, 'y': 200, 'z': 777}
+# d2.update(d1)
+# print(d2)
+
+# logins = {}
+# n = int(input())
+# for i in range(n):
+#     login = input()
+#     if login in logins:
+#         print(f'{login}{logins[login]}')
+#         logins[login] += 1
+#     else:
+#         print('OK')
+#         logins[login] = 1
+
+# countries = {
+#     "Sweden": ["Stockholm", "Göteborg", "Malmö"],
+#     "Norway": ["Oslo", "Bergen", "Trondheim"],
+#     "England": ["London", "Birmingham", "Manchester"],
+#     "Germany": ["Berlin", "Hamburg", "Munich"],
+#     "France": ["Paris", "Marseille", "Toulouse"]
+# }
+#
+# city = input()
+# is_city = False
+# for keys in countries.keys():
+#     if city in countries[keys]:
+#         is_city = True
+#         break
+# if is_city:
+#     print(f'INFO: {city} is a city in {keys}')
+# else:
+#     print(f'ERROR: Country for {city} not found')
+
+# user = {
+#     "id": 4170,
+#     "uid": "5e941db5-9e0f-4f94-9fc5-734110c6be14",
+#     "password": "SyUpfo1ljm",
+#     "first_name": "Teresa",
+#     "last_name": "Wehner",
+#     "username": "teresa.wehner",
+#     "email": "teresa.wehner@email.com",
+#     "gender": "Non-binary",
+#     "phone_number": "+674 424.561.2776",
+#     "social_insurance_number": "637316241",
+#     "date_of_birth": "1993-08-17"
+# }
+# first option
+# a = user.pop("password")
+# b = user.pop("last_name")
+# user_up = {"secret": a, "surname": b}
+# user.update(user_up)
+# print(user)
+# second option
+# user['secret'], user['surname'] = user.pop('password'), user.pop('last_name')
+
+lst = list(map(int, input().split()))
+my_dict = {lst[-2]: lst[-1]}
+for i in range(-3, -len(lst)-1, -1):
+    my_dict = {lst[i]: my_dict}
+print(my_dict)
