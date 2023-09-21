@@ -611,3 +611,37 @@ user = {
 # vector = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18]]
 # vector1 = [j for i in vector for j in i]
 # print(vector1)
+
+# my_set = set()
+# print(my_set)
+
+# my_list = [56, 59, 53, 75, 62, 61, 75, 65, 59, 62, 64, 53,
+#            54, 62, 69, 53, 55, 62, 54, 66, 55, 57, 58, 75,
+#            72, 55, 51, 56, 71, 66, 57, 56, 59, 73, 68, 57,
+#            50, 54, 62, 68, 59, 64, 59, 59, 71, 68, 57, 54, 53, 72]
+# my_set = set(my_list)
+# print(sum(my_set) / len(my_set))
+
+# print('IGNORE HIM!' if len(set(input())) % 2 != 0 else 'CHAT WITH HER!')
+
+# color = input().split()
+# color_set = set(color)
+# print(4 - len(color_set))
+
+# print(4-len(set(map(int,input().split()))))
+
+# from string import ascii_lowercase
+# lib = set(ascii_lowercase)
+# s = set(input().lower())
+# print('YES' if len(s) == len(lib) else 'NO')
+
+# year = int(input())
+# while True:
+#     year += 1
+#     if len(set(str(year))) == 4:
+#         print(year)
+#         break
+
+# s = input()
+# a = {i for i in s if i.isalpha()}
+# print(len(a))
