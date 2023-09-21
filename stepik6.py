@@ -601,3 +601,13 @@ user = {
 # ]
 # phone_book = {i[1]: i[0] for i in people}
 # print(phone_book)
+
+# colors = ['White', 'Blue', 'Yellow', 'Purple', 'Black', 'Green']
+# sizes = ['S', 'M', 'L', 'XL', 'XLL']
+# n = len(colors) * len(sizes)
+# mat = [(i, j) for i in colors for j in sizes]
+# print(mat)
+
+# vector = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18]]
+# vector1 = [j for i in vector for j in i]
+# print(vector1)
