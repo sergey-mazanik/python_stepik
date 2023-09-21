@@ -407,3 +407,150 @@
 # for i in range(-3, -len(lst)-1, -1):
 #     my_dict = {lst[i]: my_dict}
 # print(my_dict)
+
+# workers = {
+#     'employer1': {'name': 'Jhon', 'salary': 7500},
+#     'employer2': {'name': 'Emma', 'salary': 8000},
+#     'employer3': {'name': 'Brad', 'salary': 500}
+# }
+# workers['employer3']['salary'] = 8500
+# print(workers)
+
+# s = input().lower()
+# d = {}
+# for i in s:
+#      if i.isalpha():
+#         d[i] = d.get(i, 0) + 1
+# print(d)
+
+# supermarket = {
+#     "milk": {"quantity": 20, "price": 1.19},
+#     "biscuits": {"quantity": 32, "price": 1.45},
+#     "butter": {"quantity": 20, "price": 2.29},
+#     "cheese": {"quantity": 15, "price": 1.90},
+#     "bread": {"quantity": 15, "price": 2.59},
+#     "cookies": {"quantity": 20, "price": 4.99},
+#     "yogurt": {"quantity": 18, "price": 3.65},
+#     "apples": {"quantity": 35, "price": 3.15},
+#     "oranges": {"quantity": 40, "price": 0.99},
+#     "bananas": {"quantity": 23, "price": 1.29}
+# }
+# lst = []
+# for i in supermarket:
+#     lst.append(supermarket[i]['price'] * supermarket[i]['quantity'])
+# print(sum(lst))
+
+# S1 = input()
+# S2 = input()
+# my_dict = {}
+# for i in S1:
+#     if i in my_dict:
+#         my_dict[i] += 1
+#     else:
+#         my_dict[i] = 1
+# my_dict2 = {}
+# for i in S2:
+#     if i in my_dict2:
+#         my_dict2[i] += 1
+#     else:
+#         my_dict2[i] = 1
+# if my_dict == my_dict2:
+#     print('YES')
+# else:
+#     print('NO')
+
+# morze = {'a': '•—', 'b': '—•••', 'c': '—•—•', 'd': '—••',
+#          'e': '•', 'f': '••—•', 'g': '——•', 'h': '••••',
+#          'i': '••', 'j': '•———', 'k': '—•—', 'l': '•—••',
+#          'm': '——', 'n': '—•', 'o': '———', 'p': '•——•',
+#          'q': '——•—', 'r': '•—•', 's': '•••', 't': '—',
+#          'u': '••—', 'v': '•••—', 'w': '•——', 'x': '—••—',}
+# for i in input().lower().split():
+#     for j in i:
+#         print(morze.get(j) + ' ', end = '')
+#     print()
+
+# persons= [
+#     ('Allison Hill', 334053, 'M', '1635644202'),
+#     ('Megan Mcclain', 191161, 'F', '2101101595'),
+#     ('Brandon Hall', 731262, 'M', '6054749119'),
+#     ('Michelle Miles', 539898, 'M', '1355368461'),
+#     ('Donald Booth', 895667, 'M', '7736670978'),
+#     ('Gina Moore', 900581, 'F', '7018476624'),
+#     ('James Howard', 460663, 'F', '5461900982'),
+#     ('Monica Herrera', 496922, 'M', '2955495768'),
+#     ('Sandra Montgomery', 479201, 'M', '5111859731'),
+#     ('Amber Perez', 403445, 'M', '0602870126')
+# ]
+# data0 = {}
+# data = {}
+# data1 = {}
+# data2 = {}
+# for i in range(len(persons)):
+#     data0['salary'] = persons[i][1]
+#     data1['gender'] = persons[i][2]
+#     data2['passport'] = persons[i][3]
+#     data[persons[i][0]]=data0|data1|data2
+# print(data)
+
+# data = {
+#     "my_friends": {
+#         "count": 10,
+#         "people": [{
+#             "first_name": "Kurt",
+#             "id": 621547005,
+#             "last_name": "Cobain",
+#             "bdate": "31.8.2005"
+#         }, {
+#             "first_name": "Виолетта",
+#             "id": 484200150,
+#             "last_name": "Кастилио",
+#         }, {
+#             "first_name": "Иринка",
+#             "id": 21886133,
+#             "last_name": "Бушуева",
+#             "bdate": "28.8.1942"
+#         }, {
+#             "first_name": "Данил",
+#             "id": 282456573,
+#             "last_name": "Греков",
+#             "bdate": "4.7.2002"
+#         }, {
+#             "first_name": "Валентин",
+#             "id": 184902932,
+#             "last_name": "Долматов",
+#             "bdate": "25.5"
+#         }, {
+#             "first_name": "Евгений",
+#             "id": 620469646,
+#             "last_name": "Шапорин",
+#             "bdate": "6.12.1982"
+#         }, {
+#             "first_name": "Ангелина",
+#             "id": 622328862,
+#             "last_name": "Краснова",
+#             "bdate": "4.11.1995"
+#         }, {
+#             "first_name": "Иван",
+#             "id": 576015198,
+#             "last_name": "Вирин",
+#             "bdate": "2.2.1915"
+#         }, {
+#             "first_name": "Паша",
+#             "id": 386922406,
+#             "last_name": "Воронов",
+#             "bdate": "27.9"
+#         }, {
+#             "first_name": "Ольга",
+#             "id": 622170942,
+#             "last_name": "Савченкова",
+#             "bdate": "20.12"
+#         }]
+#     }
+# }
+# lst = []
+# for i in data['my_friends']['people']:
+#     lst.append(i['first_name'])
+# lst.sort()
+# for j in lst:
+#     print(j)
