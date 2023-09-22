@@ -555,29 +555,29 @@
 # for j in lst:
 #     print(j)
 
-user = {
-    "id": 4170,
-    "uid": "5e941db5-9e0f-4f94-9fc5-734110c6be14",
-    "password": "SyUpfo1ljm",
-    "first_name": "Teresa",
-    "last_name": "Wehner",
-    "username": "teresa.wehner",
-    "email": "teresa.wehner@email.com",
-    "gender": "Non-binary",
-    "phone_number": "+674 424.561.2776",
-    "social_insurance_number": "637316241",
-    "date_of_birth": "1993-08-17",
-    "employment": {
-        "title": "Central Hospitality Liaison",
-        "key_skill": "Organisation"
-    },
-    "subscription": {
-        "plan": "Essential",
-        "status": "Idle",
-        "payment_method": "Debit card",
-        "term": "Annual"
-    }
-}
+# user = {
+#     "id": 4170,
+#     "uid": "5e941db5-9e0f-4f94-9fc5-734110c6be14",
+#     "password": "SyUpfo1ljm",
+#     "first_name": "Teresa",
+#     "last_name": "Wehner",
+#     "username": "teresa.wehner",
+#     "email": "teresa.wehner@email.com",
+#     "gender": "Non-binary",
+#     "phone_number": "+674 424.561.2776",
+#     "social_insurance_number": "637316241",
+#     "date_of_birth": "1993-08-17",
+#     "employment": {
+#         "title": "Central Hospitality Liaison",
+#         "key_skill": "Organisation"
+#     },
+#     "subscription": {
+#         "plan": "Essential",
+#         "status": "Idle",
+#         "payment_method": "Debit card",
+#         "term": "Annual"
+#     }
+# }
 # a = input().split()
 # new_user = {i: user[i] for i in a}
 # print(new_user)
@@ -689,3 +689,80 @@ user = {
 # for i in range(n):
 #     my_set = set(map(int, input().split()))
 #     print(len(my_set))
+
+# my_set = {'government', 'control', 'winter', 'few', 'generation',
+#           'service', 'national', 'tradition', 'government'}
+# my_set.update(['concert', 'brown', 'jacket', 'value'])
+# print(my_set)
+
+# my_set = {
+#     'mention', 'soup', 'pneumonia', 'tradition', 'concert', 'tease', 'generation',
+#     'winter', 'national', 'jacket', 'winter', 'wrestle', 'proposal', 'error',
+#     'pneumonia', 'concert', 'value', 'value', 'disclose', 'glasses', 'tank',
+#     'national', 'soup', 'feel', 'few', 'concert', 'wrestle', 'proposal', 'soup',
+#     'sail', 'brown', 'service', 'proposal', 'winter', 'jacket', 'mention',
+#     'tradition', 'value', 'feel', 'bear', 'few', 'value', 'winter', 'proposal',
+#     'government', 'control', 'value', 'few', 'generation', 'service', 'national',
+#     'tradition', 'government', 'mention', 'proposal'
+# }
+# 1 option
+# my_set.discard('government')
+# my_set.discard('national')
+# my_set.discard('tease')
+# print(my_set)
+# 2 option
+# my_set -= {'government', 'national', 'tease'}
+
+# my_set = {
+#     'mention', 'soup', 'pneumonia', 'tradition', 'concert', 'tease', 'generation',
+#     'winter', 'national', 'jacket', 'winter', 'wrestle', 'proposal', 'preference',
+#     'fascinate', 'earthflax', 'meadow', 'bitter', 'march', 'feel', 'wind', 'location',
+#     'need', 'adviser', 'error', 'pneumonia', 'concert', 'value', 'value', 'disclose',
+#     'glasses', 'tank', 'national', 'soup', 'feel', 'few', 'concert', 'wrestle',
+#     'proposal', 'soup', 'sail', 'brown', 'service', 'proposal', 'winter', 'jacket',
+#     'mention', 'tradition', 'value', 'feel', 'bear', 'few', 'value', 'winter', 'proposal',
+#     'government', 'control', 'value', 'few', 'generation', 'service', 'national', 'tradition',
+#     'government', 'mention', 'proposal', 'sunrise', 'refund', 'formulate', 'despise', 'hobby',
+#     'noble', 'parameter', 'update', 'serious', 'potential', 'entry', 'week',
+#     'tenant', 'debut', 'dentist', 'explode', 'default', 'slam'
+# }
+# my_set -= {'noble', 'offend', 'error', 'eagle', 'sail'}
+# print(my_set)
+
+# n = int(input())
+# my_set = set()
+# for i in range(n):
+#     lst = list(map(int, input().split()))
+#     my_set.update(lst)
+# print(len(my_set))
+
+# a = input().lower().split(',')
+# my_set = set()
+# for i in range(len(a)):
+#     if a[i] not in my_set:
+#         print('НЕТ')
+#         my_set.add(a[i])
+#     else:
+#         print('ДА')
+
+# n = set(list(map(int, input().split())))
+# m = set(list(map(int, input().split())))
+# print(* sorted(n.intersection(m)))
+
+# n = set(list(map(int, input().split())))
+# m = set(list(map(int, input().split())))
+# print(* sorted(n.difference(m)))
+
+# lst = list(input())
+# my_set = set()
+# for i in lst:
+#     if i.isdigit() and lst.count(i) > 1:
+#         my_set.add(i)
+# print(* sorted(my_set) if len(my_set) > 0 else ['NO'])
+
+# s = input()
+# my_set = set(s)
+# for i in s:
+#     if i in my_set:
+#         print(i, end='')
+#         my_set.remove(i)
