@@ -107,6 +107,75 @@
 #         break
 # print(f'Довольно!\n{sum(b)}\n{len(b)}')
 
+# n, k = map(int,input().split())
+# d = 240 - k
+# i = 5
+# level = 1
+# summa = 0
+# count = 0
+# while summa < d and n != 0:
+#     n -= 1
+#     level += 1
+#     i = level * 5
+#     summa += i
+#     count += 1
+# print(count)
+
+# n = int(input())
+# level = 0
+# cub_level = 0
+# s = 0
+# while s < n:
+#     level += 1
+#     cub_level += level
+#     s += cub_level
+# if s == n:
+#     print(level)
+# else:
+#     print(level - 1)
+
+# n, m = map(int, input().split())
+# a = list(map(int, input().split()))
+# b = list(map(int, input().split()))
+# c = []
+# i = j = 0
+# while i < n and j < m:
+#     if a[i] < b[j]:
+#         c.append(a[i])
+#         i += 1
+#     else:
+#         c.append(b[j])
+#         j += 1
+# while i < n:
+#     c.append(a[i])
+#     i += 1
+# while j < m:
+#     c.append(b[j])
+#     j += 1
+# for i in c:
+#     print(i, end=' ')
+
+# n = int(input())
+# boys = list(map(int, input().split()))
+# m = int(input())
+# girls = list(map(int, input().split()))
+# boys.sort()
+# girls.sort()
+# i = j = 0
+# count = 0
+# while i < n and j < m:
+#     if abs(boys[i] - girls[j]) <= 1:
+#         count += 1
+#         i += 1
+#         j += 1
+#     elif boys[i] < girls[j]:
+#         i += 1
+#     else:
+#         j += 1
+# print(count)
+
+################################################################################################
+
 # a = int(input())
 # while a > 0:
 #     b = a % 10
