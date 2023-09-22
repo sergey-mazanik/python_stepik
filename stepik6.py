@@ -766,3 +766,41 @@
 #     if i in my_set:
 #         print(i, end='')
 #         my_set.remove(i)
+
+# my_frozen = frozenset()
+# print(my_frozen)
+
+# print(my_frozen := frozenset())
+
+# lst = []
+# for i in range(1, 78):
+#     lst.append(int('7' * i))
+# my_frozen = frozenset(lst)
+# print(my_frozen)
+
+# words = ['feel', 'graduate', 'movie', 'fashionable', 'bacon',
+#          'drop', 'produce', 'acquisition', 'cheap', 'strength',
+#          'master', 'perception', 'noise', 'strange', 'am']
+# words_with_position = []
+# for index, value in enumerate(words, start=1):
+#     words_with_position.append((value, index))
+# print(words_with_position)
+
+# english_words = ('attack', 'bless', 'look', 'reckless', 'short', 'monster', 'trolley', 'sound',
+#                  'ambiguity', 'researcher', 'trunk', 'coat', 'quantity', 'question', 'tenant',
+#                  'miner', 'definite', 'kit', 'spectrum', 'satisfied', 'selection', 'carve',
+#                  'ask', 'go', 'suggest')
+# for index, value in enumerate(english_words, start=1):
+#     print(f'Word № {index} = {value}')
+
+# lst = list(map(int, input()))
+# for index, value in enumerate(lst):
+#     if index % 2 == 0:
+#         if value * 2 > 9:
+#             lst[index] = value * 2 - 9
+#         else:
+#             lst[index] = value * 2
+# if sum(lst) % 10 == 0:
+#     print('True')
+# else:
+#     print('False')
