@@ -645,3 +645,47 @@ user = {
 # s = input()
 # a = {i for i in s if i.isalpha()}
 # print(len(a))
+
+# set_a = {31, 37, 39, 41, 47, 58, 60, 62, 70, 75,
+#          76, 77, 78, 79, 80, 81, 85, 86, 88, 90, 93, 96, 98, 99}
+# set_b = {0, 1, 8, 16, 17, 18, 22, 24, 29, 31,
+#          33, 34, 36, 42, 46, 47, 51, 53, 62, 64, 65, 66, 67}
+# print(len(set_a & set_b))
+
+# set_a = {31, 37, 39, 41, 47, 58, 60, 62, 70, 75,
+#          76, 77, 78, 79, 80, 81, 85, 86, 88, 90, 93, 96, 98, 99}
+# set_b = {0, 1, 8, 16, 17, 18, 22, 24, 29, 31,
+#          33, 34, 36, 42, 46, 47, 51, 53, 62, 64, 65, 66, 67}
+# print(len(set_a | set_b))
+
+# set_a = {31, 37, 39, 41, 47, 58, 60, 62, 70, 75,
+#          76, 77, 78, 79, 80, 81, 85, 86, 88, 90, 93, 96, 98, 99}
+# set_b = {0, 1, 8, 16, 17, 18, 22, 24, 29, 31,
+#          33, 34, 36, 42, 46, 47, 51, 53, 62, 64, 65, 66, 67}
+# print(f'{len(set_a - set_b)}\n{len(set_b - set_a)}')
+
+# set_a = {31, 37, 39, 41, 47, 58, 60, 62, 70, 75,
+#          76, 77, 78, 79, 80, 81, 85, 86, 88, 90, 93, 96, 98, 99}
+# set_b = {0, 1, 8, 16, 17, 18, 22, 24, 29, 31,
+#          33, 34, 36, 42, 46, 47, 51, 53, 62, 64, 65, 66, 67}
+# print(len(set_a ^ set_b))
+
+# words = ['mention', 'soup', 'pneumonia', 'tradition', 'concert', 'tease', 'generation',
+#          'winter', 'national', 'jacket', 'winter', 'wrestle', 'proposal', 'error',
+#          'pneumonia', 'concert', 'value', 'value', 'disclose', 'glasses', 'tank',
+#          'national', 'soup', 'feel', 'few', 'concert', 'wrestle', 'proposal', 'soup',
+#          'sail', 'brown', 'service', 'proposal', 'winter', 'jacket', 'mention', 'tradition',
+#          'value', 'feel', 'bear', 'few', 'value', 'winter', 'proposal', 'government',
+#          'control', 'value', 'few', 'generation', 'service', 'national',
+#          'tradition', 'government', 'mention', 'proposal']
+# set_words = set(words)
+# count = 0
+# for i in set_words:
+#     if len(i) > 6:
+#         count += 1
+# print(count)
+
+# n = int(input())
+# for i in range(n):
+#     my_set = set(map(int, input().split()))
+#     print(len(my_set))
