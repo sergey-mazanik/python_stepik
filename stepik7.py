@@ -75,3 +75,47 @@
 #
 # count_letters('Привет, Старина')
 # count_letters('QWERTY')
+
+# def repeat_please_n_times(n):
+#     for i in range(n):
+#         print('Just do it')
+#
+#
+# repeat_please_n_times(5)
+
+# объявление функции
+# def is_between(name, surname, middlename):
+#     if surname <= name <= middlename or surname >= name >= middlename:
+#         print('True')
+#     else:
+#         print('False')
+#
+# # считываем данные
+# a, b, c = map(int, input().split())
+#
+# # вызываем функцию
+# is_between(a, b, c)
+
+# объявление функции
+# def count_letter(text, letter):
+#     print(text.count(letter))
+#
+#
+# # считываем данные
+# text = input()
+# symbol = input()
+# # вызываем функцию
+# count_letter(text, symbol)
+
+# объявление функции
+# def print_initials(name, surname, middlename):
+#     print(f'{surname.capitalize()} {name[0].upper()}.{middlename[0].upper()}.')
+#
+# # считываем данные
+# name = input()
+# surname = input()
+# middlename = input()
+#
+# # вызываем функцию
+# print_initials(name, surname, middlename)
+
