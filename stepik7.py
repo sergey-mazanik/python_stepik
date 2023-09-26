@@ -396,3 +396,60 @@
 #                          'avada kedavra',
 #                          'AVADA KEDAVRA']) == {'avada': [0, 1, 2],
 #                                                'kedavra': [0, 1, 2]}
+
+# объявление функции
+# def replace(text: str, old: str, new: str = ''):
+#     for i in text:
+#         if i == old:
+#             text = text.replace(i, new)
+#     return text
+#
+#
+# assert replace('Нет', 'т') == 'Не'
+# assert replace('Bella Ciao', 'a') == 'Bell Cio'
+# assert replace('nobody; i myself farewell analysis', 'l', 'z') == 'nobody; i mysezf farewezz anazysis'
+# assert replace('commend me to my kind lord meaning', 'M', 'w') == 'commend me to my kind lord meaning'
+
+# def make_header(s: str, n: int = 1) -> str:
+#     return f'<h{n}>{s}</h{n}>'
+#
+# print('Tests begin...')
+# assert make_header('Нет') == '<h1>Нет</h1>'
+# assert make_header('Bella Ciao', 4) == '<h4>Bella Ciao</h4>'
+# assert make_header('Go little rock star', 6) == '<h6>Go little rock star</h6>'
+# assert make_header('Девальвации не будет. Твердо и четко') == '<h1>Девальвации не будет. Твердо и четко</h1>'
+# print('Tests completed successfully')
+
+# def create_matrix(size: int = 3, up_fill: int = 0, down_fill: int = 0):
+#     matrix = []
+#     for i in range(size):
+#         matrix.append([0] * size)
+#     for i in range(size):
+#         for j in range(size):
+#             if i == j:
+#                 matrix[i][j] = j + 1
+#             elif i < j:
+#                 matrix[i][j] = up_fill
+#             elif i > j:
+#                 matrix[i][j] = down_fill
+#     return matrix
+#
+#
+# assert create_matrix() == [[1, 0, 0], [0, 2, 0], [0, 0, 3]]
+# assert create_matrix(4) == [[1, 0, 0, 0], [0, 2, 0, 0], [0, 0, 3, 0], [0, 0, 0, 4]]
+#
+# assert create_matrix(up_fill=7) == [[1, 7, 7],
+#                              [0, 2, 7],
+#                              [0, 0, 3]]
+#
+# assert create_matrix(up_fill=7, down_fill=9) == [[1, 7, 7],
+#                                           [9, 2, 7],
+#                                           [9, 9, 3]]
+#
+#
+# assert create_matrix(size=4, up_fill=7, down_fill=9) == [[1, 7, 7, 7],
+#                                                   [9, 2, 7, 7],
+#                                                   [9, 9, 3, 7],
+#                                                   [9, 9, 9, 4]]
+# print('Tests completed successfully')
+
