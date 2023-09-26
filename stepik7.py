@@ -295,3 +295,68 @@
 # assert count_AGTC('CCT') == (0, 0, 1, 2)
 # print('Проверки пройдены')
 
+# def add_binary(a, b):
+#     'Возвращает сумму чисел a и b в двоичном виде'
+#     binary_sum = bin(a+b)[2:]
+#     return binary_sum
+#
+#
+# print(add_binary.__doc__)
+
+# from typing import List, Optional
+#
+#
+# def first_repeated_word(s: str) -> str:
+#     'Находит первый дубль в строке'
+#     s = s.split()
+#     lst: List[Optional[str]] = []
+#     for i in s:
+#         if i not in lst:
+#             lst.append(i)
+#         else:
+#             return i
+#
+#
+# assert first_repeated_word('hello hi hello') == 'hello'
+# assert first_repeated_word('hello hi Hello') is None
+# assert first_repeated_word('ab ca bc ab') == 'ab'
+# assert first_repeated_word('ab ca bc Ab cA aB bc') == 'bc'
+# print('Проверки пройдены')
+
+# def shift_letter(letter: str, shift: int) -> str:
+#     'Функция сдвигает символ letter на shift позиций'
+#     new_letter: str | None = chr(((ord(letter) - ord('a') + shift) % 26) + 97)
+#     return new_letter
+#
+#
+# assert shift_letter('z', 5)
+# assert shift_letter('w', 28)
+# assert shift_letter('w', -26)
+# assert shift_letter('w', -27)
+# assert shift_letter('a', 53)
+
+# def shift_letter(letter: str, shift: int) -> str:
+#     'Функция сдвигает символ letter на shift позиций'
+#     new_letter: str | None = chr(((ord(letter) - ord('a') + shift) % 26) + 97)
+#     return new_letter
+# def caesar_cipher(s: str, shift: int) -> str | None:
+#     'Шифр цезаря'
+#     rez: str | None= ''
+#     for i in s:
+#         if i.isalpha():
+#             rez += shift_letter(i, shift)
+#         else:
+#             rez += ' '
+#     return rez
+#
+#
+# # print(caesar_cipher('leave out all the rest', -1))
+# assert caesar_cipher('leave out all the rest', -1) == 'kdzud nts zkk sgd qdrs'
+# assert caesar_cipher('one more light', 3) == 'rqh pruh oljkw'
+# assert caesar_cipher('lost in the echo', 27) == 'mptu jo uif fdip'
+# assert caesar_cipher('from the inside', 10) == 'pbyw dro sxcsno'
+# assert caesar_cipher('leave out all the rest', -4) == 'hawra kqp whh pda naop'
+# assert caesar_cipher('one more light', -33) == 'hgx fhkx ebzam'
+# print('Проверки пройдены')
+
+
