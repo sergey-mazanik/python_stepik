@@ -453,3 +453,89 @@
 #                                                   [9, 9, 9, 4]]
 # print('Tests completed successfully')
 
+# def count_args(*args):
+#     s = 0
+#     for i in args:
+#         s += 1
+#     return s
+#
+#
+# assert count_args(1, 2, 3) == 3
+# assert count_args(1, 3) == 2
+# assert count_args(2) == 1
+# assert count_args() == 0
+# print('Tests completed successfully')
+
+# def check_sum(*args: int):
+#     if sum(args) >= 50:
+#         text = "verification passed"
+#     else:
+#         text = "not enough"
+#
+#     print(text)
+
+# def multiply(*args: int):
+#     s = 1
+#     for i in args:
+#         s *= i
+#     return s
+#
+# print(multiply(2))
+
+# def only_one_positive(*args: int) -> bool:
+#     count = 0
+#     if len(args) == 0:
+#         return False
+#     else:
+#         for i in args:
+#             if i > 0:
+#                 count += 1
+#         return count == 1
+#
+#
+# print(only_one_positive())
+# assert only_one_positive(0,0,0,0,5430,0,0,0,0,0) == True
+# assert only_one_positive() == False
+
+# def print_goods(*args):
+#     c = 1
+#     for i in args:
+#         if type(i) == str and len(i) > 0:
+#             print(f'{c}. {i}')
+#             c += 1
+#     if c == 1:
+#         print('Нет товаров')
+#
+#
+# assert print_goods(1, True, 'Грушечка', '', 'Pineapple')
+
+# def info_kwargs(**kwargs):
+#     for i in sorted(kwargs):
+#         print(f"{i} = {kwargs[i]}")
+#
+# print(info_kwargs(first_name="John", last_name="Doe", age=33))
+
+# def create_actor(**kwargs):
+#     f = {
+#         'name': 'Райан',
+#         'surname': 'Рейнольдс',
+#         'age': 46,
+#     }
+#     return f | kwargs
+#
+#
+# assert create_actor() == {
+#     'name': 'Райан',
+#     'surname': 'Рейнольдс',
+#     'age': 46, }
+# assert create_actor(height=190, movies=['Дедпул', 'Главный герой']) == {
+#     'name': 'Райан',
+#     'surname': 'Рейнольдс',
+#     'age': 46,
+#     'height': 190,
+#     'movies': ['Дедпул', 'Главный герой']}
+# assert create_actor(name='Jack', age=20) == {
+#     'name': 'Jack',
+#     'surname': 'Рейнольдс',
+#     'age': 20, }
+# print('Tests completed successfully')
