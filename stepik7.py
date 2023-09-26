@@ -359,4 +359,40 @@
 # assert caesar_cipher('one more light', -33) == 'hgx fhkx ebzam'
 # print('Проверки пройдены')
 
+# MIN_DRIVING_AGE = 18
+#
+# def allowed_driving(name: str, age: int) -> None:
+#     if age >= MIN_DRIVING_AGE:
+#         print(f'{name} может водить')
+#     else:
+#         print(f'{name} еще рано садиться за руль')
 
+# def get_word_indices(strings: list[str]) -> dict:
+#     d = {}
+#     for i in range(len(strings)):
+#         for j in strings[i].lower().split():
+#             if j not in d:
+#                 d[j] = [i]
+#             else:
+#                 d[j].append(i)
+#     return d
+#
+#
+# assert get_word_indices(['a', 'v', 'v', 'e', 'v', 'V']) == {'a': [0], 'v': [1, 2, 4, 5], 'e': [3]}
+# assert get_word_indices(['This is a string',
+#                          'test String',
+#                          'test',
+#                          'string']) == {'this': [0], 'is': [0], 'a': [0],
+#                                         'string': [0, 1, 3], 'test': [1, 2]}
+#
+# assert get_word_indices(['Look at my horse',
+#                          'my horse',
+#                          'is amazing']) == {'look': [0], 'at': [0], 'my': [0, 1],
+#                                             'horse': [0, 1], 'is': [2], 'amazing': [2]}
+#
+# assert get_word_indices([]) == {}
+#
+# assert get_word_indices(['Avada Kedavra',
+#                          'avada kedavra',
+#                          'AVADA KEDAVRA']) == {'avada': [0, 1, 2],
+#                                                'kedavra': [0, 1, 2]}
