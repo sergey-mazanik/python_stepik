@@ -606,3 +606,53 @@
 #
 # print(tribonacci(8))
 
+
+# def get_combin(n, k):
+#     if k == 0:
+#         return 1
+#     if k == n:
+#         return 1
+#     return get_combin(n - 1, k) + get_combin(n - 1, k - 1)
+#
+#
+# print(get_combin(5, 2))
+
+
+# def ackermann(m, n):
+#     if m == 0:
+#         return n + 1
+#     if m > 0 and n == 0:
+#         return ackermann(m - 1, 1)
+#     if m > 0 and n > 0:
+#         return ackermann(m - 1, ackermann(m, n - 1))
+#
+#
+# print(ackermann(3,2))
+
+
+# def list_sum_recursive(lst: list):
+#     if len(lst) == 0:
+#         return 0
+#     if len(lst) == 1:
+#         return lst[0]
+#     return lst[0] + list_sum_recursive(lst[1:])
+#
+#
+# print(list_sum_recursive([1, 2, 3, 4, 5]))
+
+
+# def flatten(s: list):
+#     if not s:
+#         return []
+#     if isinstance(s[0],list):
+#         return flatten(s[0]) + flatten(s[1:])
+#     return s[:1] + flatten(s[1:])
+#
+#
+# assert flatten([1, [2, 3, [4]], 5]) == [1, 2, 3, 4, 5]
+# assert flatten([1, [2, 3], [[2], 5], 6]) == [1, 2, 3, 2, 5, 6]
+# assert flatten([[[[9]]], [1, 2], [[8]]]) == [9, 1, 2, 8]
+# print('Tests completed successfully')
+
+
+
