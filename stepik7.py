@@ -557,5 +557,52 @@
 #
 # print_to(5)
 
+# n = int(input())
+# lst = input().split()
+# for i in range(len(lst)):
+#     lst[i] = int(lst[i])
+#
+#
+# def zero(n):
+#     if n != 0:
+#         print(lst[n - 1], end=' ')
+#         zero(n - 1)
+#
+#
+# zero(len(lst))
 
+
+# def double_fact(n):
+#     if n == 1:
+#         return 1
+#     if n == 2:
+#         return 2
+#     return n * double_fact(n - 2)
+#
+#
+# print(double_fact(10))
+
+
+# def fib(n):
+#     if n == 0:
+#         return 0
+#     if n == 1:
+#         return 1
+#     return fib(n - 1) + fib(n - 2)
+#
+#
+# print(fib(n := int(input())))
+
+
+# def tribonacci(n):
+#     if n == 0:
+#         return 0
+#     if n == 1:
+#         return 0
+#     if n == 2:
+#         return 1
+#     return tribonacci(n-1) + tribonacci(n-2) + tribonacci(n-3)
+#
+#
+# print(tribonacci(8))
 
