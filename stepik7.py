@@ -655,4 +655,80 @@
 # print('Tests completed successfully')
 
 
+# def flatten_dict(d: dict, s: str = ''):
+#     res = {}
+#     for k, v in d.items():
+#         if isinstance(v, int):
+#             res.update({s + k: v})
+#         if isinstance(v, dict):
+#             res.update(flatten_dict(v, s + k + '_'))
+#     return res
+#
+#
+# assert flatten_dict({'Q': {'w': {'E': {'r': {'T': {'y': 123}}}}}}) == {'Q_w_E_r_T_y': 123}
+# assert flatten_dict({'Germany_berlin': 7,
+#                      'Europe_italy_Rome': 3,
+#                      'USA_washington': 1,
+#                      'USA_New York': 4}) == {'Germany_berlin': 7, 'Europe_italy_Rome': 3, 'USA_washington': 1,
+#                                              'USA_New York': 4}
+# assert flatten_dict({'a': 100, 'b': 200}) == {'a': 100, 'b': 200}
+# assert flatten_dict(
+#     {'Geeks': {'for': {'for': 1, 'geeks': 4}}, 'for': {'geeks': {'Geeks': 3}}, 'geeks': {'Geeks': {'for': 7}}}) == {
+#            'Geeks_for_geeks': 4, 'for_geeks_Geeks': 3, 'geeks_Geeks_for': 7, 'Geeks_for_for': 1}
+# assert flatten_dict({"a": 1,
+#                      "b": {
+#                          "c": 2,
+#                          "d": 3,
+#                          "e": {
+#                              "f": 4,
+#                              '6': 100,
+#                              '5': {"g": 6},
+#                              "l": 1,
+#                          }
+#                      }}) == {'a': 1, 'b_c': 2, 'b_d': 3, 'b_e_f': 4, 'b_e_6': 100, 'b_e_5_g': 6, 'b_e_l': 1}
+# print('Tests completed successfully')
 
+
+# # функция merge_two_list должна объединить два списка
+# def merge_two_list(a, b):
+#     c = []
+#     i = j = 0
+#     while i < len(a) and j < len(b):
+#         if a[i] < b[j]:
+#             c.append(a[i])
+#             i += 1
+#         else:
+#             c.append(b[j])
+#             j += 1
+#     if i < len(a):
+#         c += a[i:]
+#     if j < len(b):
+#         c += b[j:]
+#     return c
+#
+#
+# # функция merge_sort должна выполнить сортировку
+# def merge_sort(s):
+#     if len(s) == 1:
+#         return s
+#     middle = len(s) // 2
+#     left = merge_sort(s[:middle])
+#     right = merge_sort(s[middle:])
+#     return merge_two_list(left, right)
+#
+#
+# print(merge_sort([6, 2, 19, 5, 10, 7, 11]))
+
+
+# def quick_sort(s):
+#     if len(s) <= 1:
+#         return s
+#     elem = s[0]
+#     left = list(filter(lambda x: x < elem, s))
+#     center = [i for i in s if i == elem]
+#     right = list(filter(lambda x: x > elem, s))
+#
+#     return quick_sort(left) + center + quick_sort(right)
+#
+#
+# print(quick_sort([16, 19, 2, 12, 20, 15, 20, 15]))
