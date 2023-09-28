@@ -539,3 +539,23 @@
 #     'surname': 'Рейнольдс',
 #     'age': 20, }
 # print('Tests completed successfully')
+
+
+# def print_from(n: int) -> None:
+#     if n > 0:
+#         print(n)
+#         print_from(n - 1)
+#
+#
+# print_from(5)
+
+
+# def print_to(n: int) -> None:
+#     if n > 0:
+#         print_to(n - 1)
+#         print(n)
+#
+# print_to(5)
+
+
+
