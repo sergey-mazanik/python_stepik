@@ -732,3 +732,28 @@
 #
 #
 # print(quick_sort([16, 19, 2, 12, 20, 15, 20, 15]))
+
+
+
+# adding_10 = lambda x: x + 10
+# print(adding_10(10))
+
+
+# starts_with = lambda s: True if s[0] == 'W' else False
+# print(starts_with('world'))
+
+
+# sale_lambda = lambda x: x * 0.9
+# print(sale_lambda(10))
+
+
+# sale_lambda = lambda x: x * 0.9 if x > 50 else x
+# print(sale_lambda(12.33))
+
+
+# sq = lambda x, y: x ** 2 + y ** 2
+# print(sq(5, 3))
+
+
+# average = lambda *args: sum(args) / len(args)
+# print(average(5, 3, 2, 2))
