@@ -757,3 +757,41 @@
 
 # average = lambda *args: sum(args) / len(args)
 # print(average(5, 3, 2, 2))
+
+
+# subject_marks = [('English', 88), ('Science', 90), ('Maths', 97), ('Physics', 93),('History', 82)]
+# subject_marks = sorted(subject_marks, key=lambda x: x[1])
+# [print(*tu, sep=' ') for tu in subject_marks]
+
+
+# subject_marks = [('English', 88), ('Science', 90), ('Maths', 97),
+#                  ('Physics', 93), ('History', 82), ('French', 78),
+#                  ('Art', 58), ('Chemistry', 76), ('Programming', 91)]
+# subject_marks = sorted(subject_marks, key=lambda x: -x[1])
+# [print(*tu, sep=' ') for tu in subject_marks]
+
+
+# subject_marks = [('English', 88), ('Science', 90), ('Maths', 88),
+#                  ('Physics', 93), ('History', 78), ('French', 78),
+#                  ('Art', 78), ('Chemistry', 88), ('Programming', 91)]
+# subject_marks = sorted(subject_marks, key=lambda x: (-x[1], x[0]))
+# [print(*tu, sep=' ') for tu in subject_marks]
+
+
+# models = [{'make': 'Nokia', 'model': 216, 'color': 'Black'},
+#           {'make': 'Mi Max', 'model': 2, 'color': 'Gold'},
+#           {'make': 'Samsung', 'model': 7, 'color': 'Blue'},
+#           {'make': 'Apple', 'model': 10, 'color': 'Silver'},
+#           {'make': 'Oppo', 'model': 9, 'color': 'Red'},
+#           {'make': 'Huawei', 'model': 4, 'color': 'Grey'},
+#           {'make': 'Honor', 'model': 3, 'color': 'Black'}]
+#
+# for i in sorted(models, key=lambda x: x['color']):
+#     print(f'Производитель: {i["make"]}, модель: {i["model"]}, цвет: {i["color"]}')
+
+# lst = [i.split(':') for i in iter(input, 'конец')]
+# for i in sorted(lst, key=lambda x: int(x[1]), reverse=True):
+#     print(i[0])
+
+
+
