@@ -810,4 +810,19 @@
 #     print(*minimum, sep=', ')
 
 
+# n = int(input())
+# k = {}
+# for i in range(n):
+#     x = input().split(" ")
+#     if x[1] in k:
+#         k[x[1]] += "," + x[0]
+#     else:
+#         k[x[1]] = x[0]
+# m = int(input())
+# for i in range(m):
+#     t = str(input())
+#     if t in k.keys():
+#         print(*k[t].split(","))
+#     else:
+#         print("Неизвестный номер")
 
