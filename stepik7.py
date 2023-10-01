@@ -826,3 +826,16 @@
 #     else:
 #         print("Неизвестный номер")
 
+
+n = int(input())
+k = {}
+for i in range(n):
+    x = input().split()
+    k[x[-1]] = k.get(x[-1], []) + [x[0]]
+m = int(input())
+for i in range(m):
+    t = str(input())
+    if t in k.keys():
+        print(*sorted(k[t]))
+    else:
+        print("Нет данных")
