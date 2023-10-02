@@ -827,15 +827,40 @@
 #         print("Неизвестный номер")
 
 
-n = int(input())
-k = {}
-for i in range(n):
-    x = input().split()
-    k[x[-1]] = k.get(x[-1], []) + [x[0]]
-m = int(input())
-for i in range(m):
-    t = str(input())
-    if t in k.keys():
-        print(*sorted(k[t]))
-    else:
-        print("Нет данных")
+# n = int(input())
+# k = {}
+# for i in range(n):
+#     x = input().split()
+#     k[x[-1]] = k.get(x[-1], []) + [x[0]]
+# m = int(input())
+# for i in range(m):
+#     t = str(input())
+#     if t in k.keys():
+#         print(*sorted(k[t]))
+#     else:
+#         print("Нет данных")
+
+
+# lst = [i.split(', ') for i in iter(input, 'конец')]
+# my_dict = {}
+# for i in lst:
+#     if i[0] not in my_dict:
+#         my_dict[i[0]] = [int(i[1])]
+#     else:
+#         my_dict[i[0]].append(int(i[1]))
+# for k, v in sorted(my_dict.items(), key=lambda x: (-(sum(x[1]) / len(x[1])), x[0])):
+#     print(k, (sum(v) / len(v)))
+
+
+# comments = {
+#     'Дили': set(),
+#     'Вили': set(),
+#     'Били': set()
+# }
+# a = input()
+# while a != 'конец':
+#     name, commentator = a.split(': ')
+#     comments[name].add(commentator)
+#     a = input()
+# for k, v in sorted(comments.items(), key=lambda item: -len(item[1])):
+#     print(f'Количество уникальных комментаторов у {k} - {len(v)}')
