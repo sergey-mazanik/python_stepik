@@ -889,3 +889,83 @@
 #         multiplication()
 #     else:
 #         print('Ошибка. Данной операции не существует')
+
+
+# def create_accumulator():
+#     count = 0
+#     def inner_func(y: int):
+#         nonlocal count
+#         count += y
+#         return count
+#     return inner_func
+#
+#
+# summator_1 = create_accumulator()
+# print(summator_1(1)) # печатает 1
+# print(summator_1(5)) # печатает 6
+# print(summator_1(2)) # печатает 8
+#
+# summator_2 = create_accumulator()
+# print(summator_2(3)) # печатает 3
+# print(summator_2(4)) # печатает 7
+
+
+# def create_accumulator(x=0):
+#     count1 = x
+#     count2 = 0
+#     def inner_func(y: int):
+#         nonlocal count1, count2
+#         if x == 0:
+#             count2 += y
+#             return count2
+#         else:
+#             count1 += y
+#             return count1
+#     return inner_func
+#
+#
+# summator_1 = create_accumulator(100)
+# print(summator_1(1)) # печатает 101
+# print(summator_1(5)) # печатает 106
+# print(summator_1(2)) # печатает 108
+#
+# summator_2 = create_accumulator()
+# print(summator_2(3)) # печатает 3
+# print(summator_2(4)) # печатает 7
+
+
+# def multiply(x: int):
+#     count = x
+#     def inner_func(y: int):
+#         nonlocal count
+#         return count * y
+#     return inner_func
+#
+#
+# f_2 = multiply(2)
+# print("Умножение 2 на 5 =", f_2(5)) #10
+# print("Умножение 2 на 15 =", f_2(15)) #30
+# f_3 = multiply(3)
+# print("Умножение 3 на 5 =", f_3(5)) #15
+# print("Умножение 3 на 15 =", f_3(15)) #45
+
+
+# def create_dict():
+#     numbers = {}
+#     count = 0
+#     def inner(number):
+#         nonlocal numbers, count
+#         count += 1
+#         numbers[count] = number
+#         return numbers
+#
+#     return inner
+#
+#
+# f_1 = create_dict()
+# print(f_1('hello')) # f_1 возвращает {1: 'hello'}
+# print(f_1(100)) # f_1 возвращает {1: 'hello', 2: 100}
+# print(f_1([1, 2, 3])) # f_1 возвращает {1: 'hello', 2: 100, 3: [1, 2, 3]}
+#
+# f_2 = create_dict() # создаем новое замыкание в f_2
+# print(f_2('PoweR')) # f_2 возвращает {1: 'PoweR'}
