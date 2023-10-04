@@ -734,7 +734,6 @@
 # print(quick_sort([16, 19, 2, 12, 20, 15, 20, 15]))
 
 
-
 # adding_10 = lambda x: x + 10
 # print(adding_10(10))
 
@@ -969,3 +968,187 @@
 #
 # f_2 = create_dict() # создаем новое замыкание в f_2
 # print(f_2('PoweR')) # f_2 возвращает {1: 'PoweR'}
+
+
+# def text_decor(func):
+#     def inner(*args, **kwargs):
+#         print('Hello')
+#         func(*args, **kwargs)
+#         print('Goodbye!')
+#     return inner
+#
+# @text_decor
+# def simple_func():
+#     print('I just simple python func')
+#
+#
+# simple_func()
+#
+#
+# @text_decor
+# def multiply(num1, num2):
+#     print(num1 * num2)
+#
+#
+# multiply(3, 5)
+
+
+# def repeater(func):
+#     def inner(*args, **kwargs):
+#         func(*args, **kwargs)
+#         func(*args, **kwargs)
+#
+#     return inner
+#
+#
+# @repeater
+# def multiply(num1, num2):
+#     print(num1 * num2)
+#
+#
+# multiply(2, 7)  # после этого распечатается две строки со значением 14
+# multiply(5, 3)  # после этого распечатается две строки со значением 15
+
+# def double_it(func):
+#     def inner(*args, **kwargs):
+#         s = (func(*args, **kwargs) * 2)
+#         return s
+#     return inner
+#
+#
+# @double_it
+# def multiply(num1, num2):
+#     return num1 * num2
+#
+#
+# @double_it
+# def some_func_return(a, b, c):
+#     return a ** b + c
+#
+#
+# @double_it
+# def get_sum(*args):
+#     return sum(args)
+#
+#
+# assert multiply(9, 4) == 72
+# assert multiply(100, 4) == 800
+#
+# assert get_sum(1, 2, 3, 4, 5) == 30
+#
+# assert some_func_return(4, 5, 4) == 2056
+# assert get_sum(14, 51, 34) == 198
+# assert get_sum(14) == 28
+# assert get_sum() == 0
+# assert get_sum(43, 5, 43, 43, 43, 43, 3, 2) == 450
+# print('Good')
+
+# from functools import wraps
+# def add_args(func):
+#     @wraps(func)
+#     def inner(*args, **kwargs):
+#         s = func('begin', *args, 'end')
+#         return s
+#     return inner
+#
+#
+# # Код ниже не удаляйте, он нужен для проверки
+# @add_args
+# def concatenate(*args):
+#     """
+#     Возвращает конкатенацию переданных строк
+#     """
+#     return ', '.join(args)
+#
+#
+# @add_args
+# def find_max_word(*args):
+#     """
+#     Возвращает слово максимальной длины
+#     """
+#     return max(args, key=len)
+#
+#
+# print(concatenate('hello', 'world', 'my', 'name is', 'Artem'))
+# assert concatenate('hello', 'world', 'my', 'name is', 'Artem') == 'begin, hello, world, my, name is, Artem, end'
+# assert concatenate('my', 'name is', 'Artem') == 'begin, my, name is, Artem, end'
+# assert concatenate.__name__ == 'concatenate'
+# assert concatenate.__doc__.strip() == """Возвращает конкатенацию переданных строк"""
+# assert find_max_word('my') == 'begin'
+# assert find_max_word('my', 'how') == 'begin'
+# assert find_max_word('my', 'how', 'maximum') == 'maximum'
+# assert find_max_word.__name__ == 'find_max_word'
+# assert find_max_word.__doc__.strip() == """Возвращает слово максимальной длины"""
+
+# from functools import wraps
+# def validate_args(func):
+#
+#     @wraps(func)
+#     def inner(*args, **kwargs):
+#         if len(args) < 2:
+#             return 'Not enough arguments'
+#         if len(args) > 2:
+#             return 'Too many arguments'
+#         if type(args[0]) != int or type(args[1]) != int:
+#             return 'Wrong types'
+#         else:
+#             return func(*args, **kwargs)
+#     return inner
+#
+#
+# # Код ниже не удаляйте, он нужен для проверки
+# @validate_args
+# def add_numbers(x, y):
+#     """Return sum of x and y"""
+#     return x + y
+#
+#
+# assert add_numbers(4, 5) == 9
+# assert add_numbers(4) == 'Not enough arguments'
+# assert add_numbers() == 'Not enough arguments'
+# assert add_numbers('hello') == 'Not enough arguments'
+# assert add_numbers(3, 5, 6) == 'Too many arguments'
+# assert add_numbers('a', 'b', 'c') == 'Too many arguments'
+# assert add_numbers(4.5, 5.1) == 'Wrong types'
+# assert add_numbers('hello', 4) == 'Wrong types'
+# assert add_numbers(9, 'hello') == 'Wrong types'
+# assert add_numbers([1, 3], {}) == 'Wrong types'
+# assert add_numbers.__name__ == 'add_numbers'
+# assert add_numbers.__doc__.strip() == 'Return sum of x and y'
+# print('Good')
+
+
+# from functools import wraps
+# def memoize(func):
+#
+#
+#    cash = {}
+#     @wraps(func)
+#     def inner(n):
+#         if n in cash:
+#             return cash[n]
+#         else:
+#             cash[n] = func(n)
+#             return func(n)
+#     return inner
+#
+#
+# @memoize
+# def fibonacci(n):
+#     """
+#     Возвращает n-ое число Фибоначчи
+#     """
+#     if n < 2:
+#         return n
+#     return fibonacci(n - 1) + fibonacci(n - 2)
+#
+#
+# assert fibonacci(50) == 12586269025
+# assert fibonacci(60) == 1548008755920
+# assert fibonacci(70) == 190392490709135
+# assert fibonacci(80) == 23416728348467685
+# assert fibonacci(90) == 2880067194370816120
+# assert fibonacci(100) == 354224848179261915075
+# assert fibonacci.__name__ == 'fibonacci'
+# assert fibonacci.__doc__.strip() == 'Возвращает n-ое число Фибоначчи'
+# print('Good')
