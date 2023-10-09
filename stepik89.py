@@ -75,3 +75,41 @@
 #         lst2.append(int(line[:2]))
 # print(len(lst3))
 # print(sum(lst2))
+
+
+# def find_lines_len_more_6(file_name:str) -> int:
+#     with open(file_name, 'r', encoding='utf-8') as file:
+#         x = [i for i in file.read().splitlines()]
+#         count = 0
+#         for row in x:
+#             if len(row) > 6:
+#                 count += 1
+#         return count
+
+
+# def unique_word(file_name: str) -> int:
+#     with open(file_name, 'r', encoding='utf-8') as file:
+#         lst = []
+#         x = [i for i in file.read().lower().split()]
+#         print(x)
+#         for word in x:
+#             if word.lower() not in lst:
+#                 lst.append(word)
+#         return len(set(lst))
+#
+#
+# print(unique_word('lorem.txt'))
+
+
+# def word_dict(file_name: str) -> dict:
+#     with open(file_name, 'r', encoding='utf-8') as file:
+#         words = {}
+#         x = [i for i in file.read().lower().split()]
+#         # print(x)
+#         for word in x:
+#             words.setdefault(word.upper(), 0)
+#             words[word.upper()] += 1
+#         return f'words={words}'
+#
+#
+# print(word_dict('lorem.txt'))
