@@ -113,3 +113,23 @@
 #
 #
 # print(word_dict('lorem.txt'))
+
+
+# def long_words(file_name: str) -> list:
+#     with open(file_name, 'r', encoding='utf-8') as file:
+#         words = {}
+#         lst = []
+#         x = [i for i in file.read().upper().split()]
+#         for i in x:
+#             if i in words:
+#                 words[i] = words[i] + 1
+#             else:
+#                 words[i] = 1
+#         for key in words:
+#             if key.endswith('ЕЯ') == True:
+#                 lst.append(key)
+#         lst.sort(key=lambda item: (len(item), item))
+#         print(*lst, sep="\n")
+#
+#
+# long_words('words.txt')
