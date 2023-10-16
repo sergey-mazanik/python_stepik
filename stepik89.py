@@ -133,3 +133,54 @@
 #
 #
 # long_words('words.txt')
+
+
+# from string import ascii_lowercase
+# import json
+#
+# alphabet = {}
+# for i in range(len(ascii_lowercase)):
+#     alphabet[chr(97 + i)] = i + 1
+# json_data = json.dumps(alphabet)
+# print(json_data)
+
+
+# import json
+#
+# maximum = 0
+# max_name = ''
+# max_lastname = ''
+#
+# with open('manager_sales.json') as file:
+#     data = json.load(file)
+#
+#     for element in data:
+#         name = element['manager']['first_name']
+#         lastname = element['manager']['last_name']
+#         total = 0
+#         for car in element['cars']:
+#             total += car['price']
+#         if total > maximum:
+#             maximum = total
+#             max_name = name
+#             max_lastname = lastname
+# print(max_name, max_lastname, maximum)
+
+
+# import json
+#
+# maximum = 0
+# max_group = None
+# with open('group_people.json', 'r') as file:
+#     data = json.load(file)
+#
+#     for group in data:
+#         id_group = group['id_group']
+#         count_female = 0
+#         for person in group['people']:
+#             if person['gender'] == 'Female' and person['year'] > 1977:
+#                 count_female += 1
+#         if count_female > maximum:
+#             maximum = count_female
+#             max_group = id_group
+# print(max_group, maximum)
