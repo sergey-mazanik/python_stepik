@@ -485,3 +485,91 @@
 # assert zip_with_function([[2, 5, 8], [3, 4, 7], [5, 6, 5]], get_sum_three_numbers) == [10, 15, 20]
 # assert zip_with_function([[1, 2, 3], [4, 5, 6], [7, 8, 9]], get_sum_three_numbers) == [12, 15, 18]
 # assert zip_with_function([["a", "b"], ["1", "2"]], combine_strings) == ['a1', 'b2']
+
+
+# 10.6 Встроенная функция isinstance
+# s_strok = ''
+# s_list = []
+# s_num = 0
+# a = [5, 3, 'hello', [3, 4], 'world', [5], 10.5]
+# for i in a:
+#     if isinstance(i, str):
+#         s_strok = s_strok + i
+#     elif isinstance(i, list):
+#         s_list = s_list + i
+#     elif isinstance(i, (int, float)):
+#         s_num = s_num + i
+# print(s_strok)
+# print(s_list)
+# print(s_num)
+
+
+# def count_strings(*args):
+#     count = 0
+#     for i in args:
+#         if isinstance(i, str):
+#             count += 1
+#     return count
+#
+#
+# assert count_strings(1, 2, 'hello', [2, 3, 4], True) == 1
+# assert count_strings('am', 'world', 'hello', 'is') == 4
+# assert count_strings() == 0
+# assert count_strings(True, False) == 0
+# print('Well done')
+
+
+# def find_keys(**kwargs):
+#     lst = []
+#     for k, v in kwargs.items():
+#         if isinstance(v, (list, tuple)):
+#             lst.append(k)
+#     return sorted(lst, key=str.lower)
+#
+#
+# assert find_keys(t=[4, 5], W=[5, 3], A=(3, 2), a={2, 3}, b=[4]) == ['A', 'b', 't', 'W']
+# assert find_keys(name='Bruce', surname='Wayne') == []
+# assert find_keys(marks=[4, 5], name='ashle', surname='Brown', age=20, Also=(1, 2)) == ['Also', 'marks']
+# print('Well done')
+
+
+# 10.7 Функции all, any
+
+# a = ['hello', '', 'world']
+# print(all(a))
+# a = 99
+# condition_1 = a % 2 == 0
+# condition_2 = a > 50
+# condition_3 = a < 1000
+# print(all([condition_1, condition_2, condition_3]))
+# print(any([condition_1, condition_2, condition_3]))
+#
+# words = ['notice', 'deter', 'west', 'brush', 'stadium',
+#          'package', 'price', 'clothes', 'sword', 'apology']
+# check = [len(word) >= 4 for word in words]
+# print(check)
+# print(all(check))
+# print(all([len(word) > 4 for word in words]))
+# print(any([len(word) > 7 for word in words]))
+# print(any([len(word) >= 7 for word in words]))
+
+
+# s = list(map(str, input().split()))
+# lst = []
+# for i in s:
+#     if 'a' in i or 'A' in i:
+#         lst.append(i)
+# c = len(s) - len(lst)
+# cond = c == 0
+# print(all([cond]))
+
+# text = input().lower().split()
+# flag = []
+# for i in text:
+#     if i.endswith('ought'):
+#         flag.append(True)
+#     else:
+#         flag.append(False)
+# print(any(flag))
+#
+# print(any((word.endswith('ought') for word in input().lower().split())))
