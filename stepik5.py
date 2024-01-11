@@ -842,6 +842,6 @@
 # from string import ascii_uppercase
 # print([ascii_uppercase[i-1] * i for i in range(1, int(input()) + 1)])
 
-# phrase = 'Take only the words that start with t in this sentence'
-# phrase = phrase.split()
-# print([phrase[i] for i in range(len(phrase)) if 't' == phrase[i][0] or 'T' == phrase[i][0]])
+phrase = 'Take only the words that start with t in this sentence'
+phrase = phrase
+print([phrase[i] for i in range(len(phrase)) if 't' == phrase[i][0] or 'T' == phrase[i][0]])
